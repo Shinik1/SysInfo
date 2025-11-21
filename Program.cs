@@ -75,7 +75,7 @@ class SysInfoLinux
         Console.WriteLine("User: " + GetUserName());       // Текущий пользователь
 
         // Информация о памяти
-        PrintMemoryInfo();                                 // ОЗУ и swap
+        PrintMemoryInfo();                                 
         Console.WriteLine("Virtual memory: " + GetVirtualMemory() + " MB");  // Виртуальная память
 
         // Информация о процессоре
@@ -339,4 +339,5 @@ class SysInfoLinux
         }
         return new Utsname();
     }
+
 }
